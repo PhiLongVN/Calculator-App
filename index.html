@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 30px;
+        text-align: center;
+        padding: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="active">
+    <div class="cotainer">
+      <!-- ========================================= -->
+      <!--                   HEAD                    -->
+      <!-- ========================================= -->
+      <header class="head">
+        <!-- calc -->
+        <h2 class="head-calc">calc</h2>
+
+        <!-- theme -->
+        <div class="head-theme">
+          <h3>theme</h3>
+
+          <div class="theme-block">
+            <div class="block-number">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+
+            <div class="block-ball">
+              <div class="ball"></div>
+             
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ========================================= -->
+      <!--                  SCREEN                   -->
+      <!-- ========================================= -->
+      <div class="screen"></div>
+
+      <!-- ========================================= -->
+      <!--                   TABLE                   -->
+      <!-- ========================================= -->
+      <div class="table">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="ac" >del</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="+">+</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button value="-">-</button>
+        <button value=".">.</button>
+        <button value="0">0</button>
+        <button value="/">/</button>
+        <button value="x">x</button>
+        <button class="ac" >reset</button>
+        <button class="equal" >=</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Huynh Phi Long</a>.
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

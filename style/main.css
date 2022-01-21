@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Spartan", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ============================================ */
+/*                     .HEAD                    */
+/* ============================================ */
+.head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .head-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.head .head-theme h3 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.head .head-theme .theme-block {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.head .head-theme .theme-block .block-number {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .head-theme .theme-block .block-ball {
+  width: 130%;
+  height: 25px;
+  padding: 1rem 0.5rem;
+  border-radius: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .head-theme .theme-block .block-ball .ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 100rem;
+}
+
+/* ================================================================================== */
+/*                       1                      */
+/* ================================================================================== */
+body.active {
+  background: #3b4664;
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+}
+
+body.active .head {
+  color: white;
+}
+
+body.active .head .head-calc {
+  color: #ebeaef;
+}
+
+body.active .head .head-theme h3 {
+  color: #ebeaef;
+}
+
+body.active .head .head-theme .theme-block .block-number {
+  color: #ebeaef;
+}
+
+body.active .head .head-theme .theme-block .block-ball {
+  background: #252d45;
+}
+
+body.active .head .head-theme .theme-block .block-ball .ball {
+  background: #d73e27;
+}
+
+body.active .screen {
+  background: #181f32;
+  color: white;
+}
+
+body.active .table {
+  background: #252d44;
+}
+
+body.active .table button {
+  background: #eae3db;
+  color: #444b5e;
+  -webkit-box-shadow: 0px 3px 0px #b5a79b;
+          box-shadow: 0px 3px 0px #b5a79b;
+}
+
+body.active .table .ac {
+  background: #647299;
+  color: white;
+  -webkit-box-shadow: 0px 3px 0px #414e71;
+          box-shadow: 0px 3px 0px #414e71;
+}
+
+body.active .table .equal {
+  background: #d13f30;
+  color: white;
+  -webkit-box-shadow: 0px 3px 0px #932515;
+          box-shadow: 0px 3px 0px #932515;
+}
+
+/* ================================================================================== */
+/*                       2                    */
+/* ================================================================================== */
+body.active2 {
+  background: #e6e6e6;
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+}
+
+body.active2 .head .head-calc {
+  color: #393a34;
+}
+
+body.active2 .head .head-theme h3 {
+  color: #393a34;
+}
+
+body.active2 .head .head-theme .theme-block .block-number {
+  color: #393a34;
+}
+
+body.active2 .head .head-theme .theme-block .block-ball {
+  background: #d3cdcd;
+}
+
+body.active2 .head .head-theme .theme-block .block-ball .ball {
+  background: #cc5000;
+}
+
+body.active2 .screen {
+  background: #eeeeee;
+  color: #36362a;
+}
+
+body.active2 .table {
+  background: #d3cdcd;
+}
+
+body.active2 .table button {
+  background: #e5e4e0;
+  color: #414138;
+  -webkit-box-shadow: 0px 3px 0px #a8a093;
+          box-shadow: 0px 3px 0px #a8a093;
+}
+
+body.active2 .table .ac {
+  background: #378287;
+  color: white;
+  -webkit-box-shadow: 0px 3px 0px #1b6166;
+          box-shadow: 0px 3px 0px #1b6166;
+}
+
+body.active2 .table .equal {
+  background: #c85401;
+  color: white;
+  -webkit-box-shadow: 0px 3px 0px #c85401;
+          box-shadow: 0px 3px 0px #c85401;
+}
+
+/* ================================================================================== */
+/*                       3                   */
+/* ================================================================================== */
+body.active3 {
+  background: #17062a;
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+}
+
+body.active3 .head .head-calc {
+  color: #f7e842;
+}
+
+body.active3 .head .head-theme h3 {
+  color: #f7e842;
+}
+
+body.active3 .head .head-theme .theme-block .block-number {
+  color: #f7e842;
+}
+
+body.active3 .head .head-theme .theme-block .block-ball {
+  background: #1e0836;
+}
+
+body.active3 .head .head-theme .theme-block .block-ball .ball {
+  background: #09d7d4;
+}
+
+body.active3 .screen {
+  background: #1e0836;
+  color: #f7e842;
+}
+
+body.active3 .table {
+  background: #1e0836;
+}
+
+body.active3 .table button {
+  background: #331b4d;
+  color: #f7e842;
+  -webkit-box-shadow: 0px 3px 0px #9c17cc;
+          box-shadow: 0px 3px 0px #9c17cc;
+}
+
+body.active3 .table .ac {
+  background: #56077c;
+  color: white;
+  -webkit-box-shadow: 0px 3px 0px #9c17cc;
+          box-shadow: 0px 3px 0px #9c17cc;
+}
+
+body.active3 .table .equal {
+  background: #00decf;
+  color: black;
+  -webkit-box-shadow: 0px 3px 0px #58fcf1;
+          box-shadow: 0px 3px 0px #58fcf1;
+}
+/*# sourceMappingURL=main.css.map */

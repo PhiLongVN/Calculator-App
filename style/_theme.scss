@@ -1,0 +1,213 @@
+/* ================================================================================== */
+/*                       1                      */
+/* ================================================================================== */
+
+body.active {
+  background: #3b4664;
+
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+
+  .head {
+    color: white;
+
+    .head-calc {
+      color: #ebeaef;
+    }
+
+    .head-theme {
+      // 1
+      h3 {
+        color: #ebeaef;
+      }
+
+      // 2
+      .theme-block {
+        .block-number {
+          color: #ebeaef;
+        }
+
+        .block-ball {
+          background: #252d45;
+          .ball {
+            background: #d73e27;
+          }
+        }
+      }
+    }
+  }
+
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  .screen {
+    background: #181f32;
+    color: white;
+  }
+
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+  .table {
+    background: #252d44;
+
+    button {
+      background: #eae3db;
+      color: #444b5e;
+      box-shadow: 0px 3px 0px #b5a79b;
+    }
+
+    .ac {
+      background: #647299;
+      color: white;
+      box-shadow: 0px 3px 0px #414e71;
+    }
+    .equal {
+      background: #d13f30;
+      color: white;
+      box-shadow: 0px 3px 0px #932515;
+    }
+  }
+}
+/* ================================================================================== */
+/*                       2                    */
+/* ================================================================================== */
+
+body.active2 {
+  background: #e6e6e6;
+
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+
+  .head {
+    .head-calc {
+      color: #393a34;
+    }
+
+    .head-theme {
+      // 1
+      h3 {
+        color: #393a34;
+      }
+
+      // 2
+      .theme-block {
+        .block-number {
+          color: #393a34;
+        }
+
+        .block-ball {
+          background: #d3cdcd;
+          .ball {
+            background: #cc5000;
+          }
+        }
+      }
+    }
+  }
+
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  .screen {
+    background: #eeeeee;
+    color: #36362a;
+  }
+
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+  .table {
+    background: #d3cdcd;
+
+    button {
+      background: #e5e4e0;
+      color: #414138;
+      box-shadow: 0px 3px 0px #a8a093;
+    }
+
+    .ac {
+      background: #378287;
+      color: white;
+      box-shadow: 0px 3px 0px #1b6166;
+    }
+    .equal {
+      background: #c85401;
+      color: white;
+      box-shadow: 0px 3px 0px #c85401;
+    }
+  }
+}
+
+/* ================================================================================== */
+/*                       3                   */
+/* ================================================================================== */
+
+body.active3 {
+  background: #17062a;
+
+  /* ============================================ */
+  /*                     HEAD                     */
+  /* ============================================ */
+
+  .head {
+    .head-calc {
+      color: #f7e842;
+    }
+
+    .head-theme {
+      // 1
+      h3 {
+        color: #f7e842;
+      }
+
+      // 2
+      .theme-block {
+        .block-number {
+          color: #f7e842;
+        }
+
+        .block-ball {
+          background: #1e0836;
+          .ball {
+            background: #09d7d4;
+          }
+        }
+      }
+    }
+  }
+
+  /* ============================================ */
+  /*                    .SCREEN                   */
+  /* ============================================ */
+  .screen {
+    background: #1e0836;
+    color: #f7e842;
+  }
+
+  /* ============================================ */
+  /*                    .TABLE                    */
+  /* ============================================ */
+  .table {
+    background: #1e0836;
+
+    button {
+      background: #331b4d;
+      color: #f7e842;
+      box-shadow: 0px 3px 0px #9c17cc;
+    }
+
+    .ac {
+      background: #56077c;
+      color: white;
+      box-shadow: 0px 3px 0px #9c17cc;
+    }
+    .equal {
+      background: #00decf;
+      color: black;
+      box-shadow: 0px 3px 0px #58fcf1;
+    }
+  }
+}
