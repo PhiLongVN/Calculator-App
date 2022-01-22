@@ -72,7 +72,7 @@ body {
   transition: 0.5s ease;
 }
 
-.container {
+.cotainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,8 +86,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  max-width: 500px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 400px;
+  overflow: hidden;
 }
 
 /* ============================================ */
@@ -113,10 +115,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.5rem;
 }
 
 .head .head-theme h3 {
@@ -139,6 +141,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
 }
 
 .head .head-theme .theme-block .block-number {
@@ -146,18 +149,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .head .head-theme .theme-block .block-ball {
-  width: 130%;
-  height: 25px;
-  padding: 1rem 0.5rem;
+  width: 100%;
+  height: 20px;
+  padding: 0.75rem 0.5rem;
   border-radius: 100rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,9 +177,80 @@ body {
 }
 
 .head .head-theme .theme-block .block-ball .ball {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 100rem;
+}
+
+/* ============================================ */
+/*                    .SCREEN                   */
+/* ============================================ */
+.screen {
+  width: 100%;
+  padding: 2rem 1rem;
+  min-height: 100px;
+  font-size: 1.5rem;
+  text-align: right;
+  border-radius: 10px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.286);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.286);
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* ============================================ */
+/*                    .TABLE                    */
+/* ============================================ */
+.table {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.table button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.table button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.table button:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.table .ac {
+  text-transform: uppercase;
+}
+
+.table .reset {
+  grid-column: span 2;
+}
+
+.table .equal {
+  grid-column: span 2;
 }
 
 /* ================================================================================== */
@@ -230,6 +307,11 @@ body.active .table button {
   color: #444b5e;
   -webkit-box-shadow: 0px 3px 0px #b5a79b;
           box-shadow: 0px 3px 0px #b5a79b;
+}
+
+body.active .table button:active {
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
 }
 
 body.active .table .ac {
@@ -298,6 +380,11 @@ body.active2 .table button {
           box-shadow: 0px 3px 0px #a8a093;
 }
 
+body.active2 .table button:active {
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+}
+
 body.active2 .table .ac {
   background: #378287;
   color: white;
@@ -362,6 +449,11 @@ body.active3 .table button {
   color: #f7e842;
   -webkit-box-shadow: 0px 3px 0px #9c17cc;
           box-shadow: 0px 3px 0px #9c17cc;
+}
+
+body.active3 .table button:active {
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
 }
 
 body.active3 .table .ac {

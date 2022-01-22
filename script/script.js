@@ -1,3 +1,7 @@
+/* ============================================ */
+/*                     THEME                    */
+/* ============================================ */
+
 const themeBlock = document.querySelector(".theme-block");
 const ball = document.querySelector(".block-ball");
 
@@ -21,4 +25,38 @@ themeBlock.onclick = () => {
       ball.style.justifyContent = "flex-end";
       break;
   }
+};
+
+/* ============================================ */
+/*                     CALC                     */
+/* ============================================ */
+const number = document.querySelectorAll(".value-number");
+const equal = document.querySelector(".equal");
+const reset = document.querySelector(".reset");
+const del = document.querySelector(".del");
+const screen = document.querySelector(".screen");
+
+number.forEach((element) => {
+  element.onclick = () => {
+    screen.innerText += element.innerText;
+  };
+});
+
+reset.onclick = () => {
+  screen.innerText = "";
+};
+
+
+del.onclick = () => {
+  screen.innerText = screen.innerText.slice(0, -1);
+};
+
+
+equal.onclick = () => {
+  let a = screen.innerText;
+  if (a.includes("x")) {
+    a = a.replace("x", "*");
+  }
+  let result = eval(a);
+  screen.innerText = result;
 };

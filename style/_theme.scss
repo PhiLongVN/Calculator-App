@@ -56,6 +56,10 @@ body.active {
       background: #eae3db;
       color: #444b5e;
       box-shadow: 0px 3px 0px #b5a79b;
+
+      &:active {
+        box-shadow: 0px 0px 0px black;
+      }
     }
 
     .ac {
@@ -126,6 +130,9 @@ body.active2 {
       background: #e5e4e0;
       color: #414138;
       box-shadow: 0px 3px 0px #a8a093;
+      &:active {
+        box-shadow: 0px 0px 0px black;
+      }
     }
 
     .ac {
@@ -197,6 +204,9 @@ body.active3 {
       background: #331b4d;
       color: #f7e842;
       box-shadow: 0px 3px 0px #9c17cc;
+      &:active {
+        box-shadow: 0px 0px 0px black;
+      }
     }
 
     .ac {
